@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desafio do front-end editor](./images/Desafio.png)
+![Desafio do front-end editor](./assets/images/Desafio.png)
 
 ### Links
 
