@@ -24,7 +24,17 @@
     color: #7f7f7f;
 
 }
-.features span,.features__item{
+.btn-item,#btn-item{
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+    font-size: 1.1rem;
+    color: #7f7f7f;
+}
+.features span,
+.features__item,
+.btn-item,
+#btn-item{
     margin-left: 1.5rem
 }
 
