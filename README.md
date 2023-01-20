@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Site responsivo
 
-![Desafio do front-end editor](print_mobile.png)
+![Desafio do front-end editor](./print_mobile2.png)
 
 ### Links
 
