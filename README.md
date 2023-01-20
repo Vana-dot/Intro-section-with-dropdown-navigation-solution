@@ -30,10 +30,10 @@ Users should be able to:
 
 ### Site responsivo
 
-![Desafio do front-end editor](./print_mobile2.png)
+
 ![Desafio do front-end editor](./prin.png)
-
-
+||||||||||||||||||||||||||||||||
+![Desafio do front-end editor](./print_mobile2.png)
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
