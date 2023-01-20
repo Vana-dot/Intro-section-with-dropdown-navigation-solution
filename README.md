@@ -31,6 +31,8 @@ Users should be able to:
 ### Site responsivo
 
 ![Desafio do front-end editor](./print_mobile2.png)
+![Desafio do front-end editor](./prin.png)
+
 
 ### Links
 
