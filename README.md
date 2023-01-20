@@ -28,9 +28,9 @@ Users should be able to:
 
 ![Desafio do front-end editor](./assets/images/Desafio.png)
 
-### Site responsivo 
+### Site responsivo
 
-![Desafio do front-end editor](./assets/images/print_mobile.png)
+![Desafio do front-end editor](print_mobile.png)
 
 ### Links
 
