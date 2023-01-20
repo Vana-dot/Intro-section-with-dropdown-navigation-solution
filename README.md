@@ -24,14 +24,19 @@ Users should be able to:
 - View the optimal layout for the content depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
+### Site versão desktop
 
 ![Desafio do front-end editor](./assets/images/Desafio.png)
 
-### Site responsivo
+## Site versão mobile
 
-![Desafio do front-end editor](./prin.png)
-![Desafio do front-end editor](./print_mobile2.png)
+### imagem 1 -> site responsivo sem a abertura do menu
+
+![Desafio do front-end editor](./assets/images/print-mobile.png)
+
+### Imagem 2 -> site responsivo com a abertura do menu
+
+![Desafio do front-end editor](./assets/images/print_mobile-menu.png)
 
 ### Links
 
