@@ -7,63 +7,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
 </head>
+
 <body>
- <nav class="menu">
-        <div class="features">
-           <span><img src="./assets/images/logo.svg" alt=""></span>
-          <div class="features_item">
-              <span onclick="trocas()">Features <img class="arrow" src="./assets/images/icon-arrow-down.svg" alt=""></span>
-              <div class="options" style="display:none;" id="features_item_two">
-                <ul>
-                  <li><a href=""><img src="./assets/images/icon-todo.svg" alt=""> Todo List</a></li>
-                  <li><a href=""><img src="./assets/images/icon-calendar.svg" alt=""> Calendar</a></li>
-                  <li> <a href=""><img src="./assets/images/icon-reminders.svg" alt=""> Reminders</a></li>
-                  <li> <a href=""><img src="./assets/images/icon-planning.svg" alt=""> Planning</a></li>
-                </ul>
-              </div>
-          </div>
-
-          <div class="features_item">
-              <span onclick="trocastwo()">Company <img class="arrowtwo" src="./assets/images/icon-arrow-down.svg" alt=""></span>
-              <div class="optionstwo" style="display:none;" id="company">
-                <ul>
-                  <li> <a href="">History</a> </li>
-                  <li> <a href="">Calendar </a></li>
-                  <li> <a href="">Reminders</a></li>
-                </ul>
-              </div>
-          </div>
-            <a  class="features__item" href="">Careers</a>
-            <a  class="features__item"href="">About</a>
-        </div>  
-
-        <div class="features_one">
-          <a href="">Login</a>
-          <button>Register</button>
-        </div>  
-        
-  </nav>
-  
-  <aside id="menu_mobile">
-    <span  class="logo"><img src="./assets/images/logo.svg" alt=""></span>
-    <img onclick="menumobile()" id="menum" src="./assets/images/icon-menu.svg" alt="menu">
-    <nav class="menu_mobile_item">
-      <div class="features" style="display: none;" id="featu">
-        <button class="close-bt" >
-          <img onclick="menumobile()"src="./assets/images/icon-close-menu.svg" alt="Botão para fechar o menu">
-        </button>
+  <nav>
+    <div class="menumab">
+      <span><img class="logo" src="./assets/images/logo.svg" alt=""></span>
+      <img onclick="menumobile()" id="menum" src="./assets/images/icon-menu.svg" alt="menu">
+    </div>
+    <div class="menu">
+      <div class="features">
+        <span> <img class="logo" src="./assets/images/logo.svg" alt=""></span>
         <div class="features_item">
-            <span onclick="trocas()">Features <img class="arrowtre" src="./assets/images/icon-arrow-down.svg" alt=""></span>
-            <div class="optionstre" style="display:none;" id="features_item_tre">
+            <button class="btn-item" >Features <img class="img" src="./assets/images/icon-arrow-down.svg" alt=""></button>
+            <div  style="display:none;" id="features_item_two">
               <ul>
                 <li><a href=""><img src="./assets/images/icon-todo.svg" alt=""> Todo List</a></li>
                 <li><a href=""><img src="./assets/images/icon-calendar.svg" alt=""> Calendar</a></li>
@@ -72,10 +31,10 @@
               </ul>
             </div>
         </div>
-  
+        
         <div class="features_item">
-            <span onclick="trocas()">Company <img class="arrowqua" src="./assets/images/icon-arrow-down.svg" alt=""></span>
-            <div class="optionsqua" style="display:none;" id="company_tre">
+            <button id="btn-item">Company <img id="img" src="./assets/images/icon-arrow-down.svg" alt=""></button>
+            <div style="display:none;" id="company">
               <ul>
                 <li> <a href="">History</a> </li>
                 <li> <a href="">Calendar </a></li>
@@ -83,21 +42,65 @@
               </ul>
             </div>
         </div>
+        
           <a  class="features__item" href="">Careers</a>
           <a  class="features__item"href="">About</a>
-
-          <div class="features_item register">
-            <a href="">Login</a>
-            <button>Register</button>
-          </div>  
       </div>  
-  
+
+      <div class="features_one">
+        <a href="">Login</a>
+        <button>Register</button>
+      </div>  
       
+    </div>
+  </nav>
+
+  <aside class="menu_mobile" style="display: none;" id="featu" >
+    <nav>
+        <div class="features">
+          <button class="close-bt">
+            <img onclick="menumobile()"src="./assets/images/icon-close-menu.svg" alt="Botão para fechar o menu">
+          </button>
+          <div class="features_item">
+            <button class="btn-item-one" >Features <img class="imgone" src="./assets/images/icon-arrow-down.svg" alt=""></button>
+            <div  style="display:none;" id="features_item_one">
+              <ul>
+                <li><a href=""><img src="./assets/images/icon-todo.svg" alt=""> Todo List</a></li>
+                <li><a href=""><img src="./assets/images/icon-calendar.svg" alt=""> Calendar</a></li>
+                <li> <a href=""><img src="./assets/images/icon-reminders.svg" alt=""> Reminders</a></li>
+                <li> <a href=""><img src="./assets/images/icon-planning.svg" alt=""> Planning</a></li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="features_item">
+            <button id="btn-item-on">Company <img id="imgon" src="./assets/images/icon-arrow-down.svg" alt=""></button>
+            <div style="display:none;" id="companyone">
+              <ul>
+                <li> <a href="">History</a> </li>
+                <li> <a href="">Calendar </a></li>
+                <li> <a href="">Reminders</a></li>
+              </ul>
+            </div>
+          </div>
+            <a  class="features__item" href="">Careers</a>
+            <a  class="features__item"href="">About</a>
+  
+            <div class="features_item register">
+              <a href="">Login</a>
+              <button>Register</button>
+            </div>  
+        </div>  
+    
+        
+  
     </nav>
 
   </aside>
+  
 
   <main id="container">
+    <div id="overlay"></div>
     <img class="image_mobile" src="./assets/images/image-hero-mobile.png" alt="">
     <div class="container__princi_item">
       <div class="container-item" >

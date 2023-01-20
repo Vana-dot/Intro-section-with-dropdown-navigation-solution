@@ -2,9 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Epilogue', sans-serif;
-    user-select: none;
+   user-select: none;
 
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+    background: #fff;
 }
 .menu{
     display: flex;
@@ -12,6 +15,12 @@
     margin-top: 1rem;
     font-size: 1.1rem;
     color: #7f7f7f;
+}
+.menumab{
+    display: none;
+}
+.menutwo{
+    padding-left: 0;
 }
 #menu_mobile{
     display: none;
@@ -127,32 +136,46 @@ a{
     background: transparent;
     color: #000;
 }
-@media (max-width:940px){
+@media ((min-width:300px) and (max-width:940px)){
     .menu{
         display: none;
     }
-    #menu_mobile{
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-       gap: 2;
-        
+
+    .menumab{
+       display: flex;
+       justify-content: space-between;
+
     }
-    .menu_mobile_item{
-        display: flex;
-        flex-direction: column;
+    .menu_mobile{
         position: absolute;
         right: 0;
         top: 0;
         background-color: #fff;
         max-width: 50%;
         height: 100%;
+        width: 65%;
+        background-color: ;
+        padding: 0 1rem;
+        max-width: 300px;
+        z-index: 2;
     }
-    #menu_mobile, .menu_mobile_item{
-       margin-top: 2rem;
-    }
-    .menu_mobile_item img{
+   
+    .menu_mobile_item button{
         background-color: transparent;
         padding-left: 2rem;
+    }
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* cor preto com 50% de opacidade */
+        z-index: 1; /* para ficar acima do conteúdo da página */
+        display: none; /* inicia escondido */
+    }
+    #overlay.active{
+        display: block;
     }
     .close-bt{
         position: absolute;
@@ -168,30 +191,113 @@ a{
         right: 1rem;
         cursor: pointer;
     }
-    
+    .logo{
+        margin-top:2rem;
+    }
+    #featu{
+        padding-left: 2rem;
+    }
+    .features span, .features__item{
+        margin-left: 0;
+    }
+    #features_item_one, #companyone{
+        padding-left: 1.4rem;
+        padding-top: 1rem;
+    }
+    #features_item_one ul li, #companyone ul li{
+        padding-bottom: 1rem;
+    }
     .features{
         display: flex;
         flex-direction: column;
         padding:5rem 7rem 0rem 0rem ;
         color: #7f7f7f;
     }
+
     .features a{
         color: #7f7f7f;
+        padding-bottom: 1rem;
+    }
+    .features a,
+     #btn-item-on,
+     .btn-item-one{
+        font-size:1.1rem;
+     }
+     #btn-item-on,
+     .btn-item-one{
+        cursor: pointer;
+        background-color: transparent;
+        border: transparent;
+        font-size: 1.1rem;
+        color: #7f7f7f;
+        padding-bottom: 1rem;
+    }
+    .register button{
+        color:#7f7f7f;
+        border: 1px solid #000;
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 1.3rem;
+        width: 100%;
+    }
+    .register{
+        display:flex;
+        flex-direction: column;
+        padding-left: 4rem;
+        font-size: 1rem;
     }
     #container{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .container__princi_item{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+    }
+    .container-item h1{
+        font-size: 2rem;
+        margin: 4rem auto;
+        max-width: 325px;
+        padding: 0;
+        padding: 0 4rem 0 1rem;
+        white-space: nowrap;
+    }
+    .container-item p{
+        padding: 0 4rem 0 1rem;
+    }
+
+    .buttonmore{
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 5rem 5rem 5rem;
+        justify-content: center;
+    }
+    .rodape{
+        width: 100%;
+        flex-wrap: wrap; 
+        display: flex;
+        
+    }
+    .rodape ul li img{
+        width: 100%;
     }
     .princi_image{
         display: none;
     }
     .image_mobile{
         display: flex;
+        width: 100%;
+        margin: 0;
     }
-    #company_tre,#features_item_tre{
-        padding:0.5rem 0 0.5rem 2.5rem;
-    }
+    
+    
+
     
 }
 

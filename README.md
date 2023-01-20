@@ -28,6 +28,10 @@ Users should be able to:
 
 ![Desafio do front-end editor](./assets/images/Desafio.png)
 
+### Site responsivo 
+
+![Desafio do front-end editor](./assets/images/print_mobile.png)
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
