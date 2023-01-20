@@ -30,11 +30,11 @@ Users should be able to:
 
 ## Site versão mobile
 
-### imagem 1 -> site responsivo sem a abertura do menu
+### Imagem 1 : site responsivo sem a abertura do menu
 
 ![Desafio do front-end editor](./assets/images/print-mobile.png)
 
-### Imagem 2 -> site responsivo com a abertura do menu
+### **Imagem 2 : site responsivo com a abertura do menu**
 
 ![Desafio do front-end editor](./assets/images/print_mobile-menu.png)
 
